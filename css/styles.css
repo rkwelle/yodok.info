@@ -1,0 +1,290 @@
+/** @import "navigation.css"; /* Using a string *
+/** @import url("navigation.css"); /* Using a url */
+/** Import the "printstyle.css" style sheet ONLY if the media is print:
+@import "printstyle.css" print; */
+/** Import the "mobstyle.css" style sheet ONLY if the media is screen and the viewport is maximum 768 pixels:
+@import "mobstyle.css" screen and (max-width: 768px); */
+
+@media (min-width: 1200px) { 
+     /** increase or decrease 'container width'
+    .container{
+		_max-width: 970px;
+        max-width: 1300px; 
+    } **/
+} 
+
+body {
+	color: #495057;
+	font-size: 1.0625rem;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #212529;
+}
+
+/* TAB STYLING */
+#myTab {
+	border: none;
+}
+#myTab.nav-tabs > li {
+	width: 33.33333333333333%;
+    text-align: center;
+}
+#myTab.nav-tabs > li a {
+	background: #f0f5f7;
+    margin-right: 0;
+    border: 1px solid #e0e0e0;
+    border-radius: 0;
+    display: block;
+    padding: 10px 0;
+    font-weight: 700;
+    font-size: 15px;
+    color: #3a3c41;
+    transition: all 0.01s;
+}
+#myTab.nav-tabs > li a.active {
+    border-top: 2px solid #018EBB;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    background: #ffffff;
+}
+.recentposts {
+	list-style: none;
+	padding: 0;
+}
+.recentposts li {
+	padding: 15px;
+	display: flex;
+	border-bottom: 1px solid #eee;
+}
+.flex{
+	flex: 1;
+	padding-left: 15px
+}
+/* UTILITIES */
+img {
+	max-width: 100%;
+}
+.flex {
+	flex: 1;
+}
+a, a:link, a:visited, a:active, a:hover {
+	color: #07a;
+}
+
+img.alignright {float:right; margin:0 0 1em 1em}
+img.alignleft {float:left; margin:0 1em 1em 0}
+img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+a img.alignright {float:right; margin:0 0 1em 1em}
+a img.alignleft {float:left; margin:0 1em 1em 0}
+a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+
+/* HEADER */
+header h3 {
+	font-weight: bold;
+}
+#searchdiv {
+	display: flex;
+	align-items: center;
+}
+.searchform {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: inline-block;
+	zoom: 1; /* ie7 hack for display:inline-block */
+	border: solid 1px #196de1;
+	padding: 3px 5px;
+	-webkit-border-radius: 2em;
+	-moz-border-radius: 2em;
+	border-radius: 2em;
+	background: #196de1;
+	background: -webkit-gradient(linear, left top, left bottom, from(#196de1), to(#196de1));
+	background: -moz-linear-gradient(top,  #196de1,  #196de1);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#2ab34a', endColorstr='#196de1'); /* ie7 */
+	-ms-filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#196de1', endColorstr='#196de1'); /* ie8 */
+}
+.searchform input {
+	font: normal 15px/100% Arial, Helvetica, sans-serif;
+}
+.searchform .searchfield {
+	background: #fff;
+	padding: 6px 6px 6px 8px;
+	width: 300px;
+	border: solid 1px #2ab34a;
+	outline: none;
+	-webkit-border-radius: 2em;
+	-moz-border-radius: 2em;
+	border-radius: 2em;	
+}
+.searchform .searchbutton {
+	color: #fff;
+	border: solid 1px #213981;
+	font-size: 15px;
+	height: 30px;
+	width: 30px;
+	-webkit-border-radius: 2em;
+	-moz-border-radius: 2em;
+	border-radius: 2em;
+	background: #5f5f5f;
+	background: -webkit-gradient(linear, left top, left bottom, from(#213981), to(#06283a));
+	background: -moz-linear-gradient(top,  #213981,  #06283a);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#06283a', endColorstr='#213981'); /* ie7 */
+	-ms-filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#06283a', endColorstr='#213981'); /* ie8 */
+}
+.searchform .searchbutton:hover {
+	cursor: pointer;
+}
+
+/* NAVIGATION BAR */
+nav {
+	background-color: #196de1;
+	width: 100%;
+	z-index: 100;
+}
+nav ul {
+	padding: 0;
+	margin: 0;
+}
+nav ul li {
+	position: relative;
+	display: inline-block;
+}
+nav ul li a, nav ul li a:visited, nav ul li a:active {
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 10px 18px;
+}
+nav li.active {
+	background: #fa3f69;
+}
+
+nav ul li a:hover {
+	_background: #fa3f69;
+	text-decoration: underline;
+	color: #fff;
+}
+
+/* prev and next buttons*/
+.prev, .next {
+	cursor: pointer; 
+	margin-top: 210px;
+	width: 14px;
+	position :absolute;
+	top: 0;
+	height: 40px;
+	z-index: 999; 
+	text-align: center;
+	background: #2ab34a; 
+}
+.prev {
+	left: -14px;
+}
+.next {
+	right: -14px;
+}
+.prev:hover, .next:hover {
+	background: #78b218;
+}
+.prev img, .next img{
+	margin-top: 10px;
+}
+
+.h-4 {
+	height: 2rem;
+}
+.page-title {
+	font-weight: bold;
+	display: inline-block;
+	margin-bottom: 1.5rem;
+	border-bottom: 2px solid #21252B;
+}
+.title-line {
+	border-top: 2px solid #ddd;
+	border-bottom: 2px solid #212529;
+	padding: 10px 0;
+	text-align: center;
+}
+.title-bg {
+	color: #fff;
+	background-color: #213981;
+	padding: 10px;
+}
+article {
+	margin-bottom: 2rem;
+}
+article .title a {
+	color: #212529;
+}
+#sidebar h3 {
+	font-size: 1.25rem;
+}
+aside {
+	margin-bottom: 3rem;
+}
+aside.categories ul {
+	margin: 0;
+	padding: 0;
+}
+aside.categories li {
+	display: inline-block;
+	margin: 0 6px 6px 0;
+}
+aside.categories li a {
+	display: block;
+	padding: 2px 6px;
+	_color: rgba(0,0,0,.8);
+	color: #fff;
+	_background: #fff5bb;
+	background: #007bff;
+}
+.plain-ul {
+	padding: 0;
+	margin-top: 1rem;
+	list-style: none;
+}
+.plain-ul li {
+	border-bottom: 1px dotted #ccc;
+}
+.plain-ul a {
+	display: block;
+	text-decoration: none;
+	_padding: 10px 20px;
+	padding: 10px;
+	_color: #21252B;
+}
+.plain-ul a:hover {
+	background: rgba(105,199,115,.1);
+}
+
+/* POSTS */
+article > .card {
+	border-width: 0; /* remove card border... could also set border attributes to none */
+}
+article > .card .card-body {
+	padding: 0;
+	padding-left: 1rem;
+}
+@media (max-width: 768px)  {
+    article > .card .card-body {
+		padding-left: 0;
+		padding-top: 1rem;
+    }
+}
+
+/* FOOTER */
+footer {
+	margin-top: 2rem;
+	background: #196de1;
+	color: #fff;
+	padding: 5px 0 5px 0;
+}
+footer a, footer a:visited, footer a:active {
+	color: #fff;
+	text-decoration: none;
+}
+footer a:hover {
+	text-decoration: underline;
+	color: #fff;
+}
